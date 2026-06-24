@@ -1,43 +1,61 @@
-# DataScience_DeepLearning----ANN-ModelBuilding----Bankrupt_Prediction_ANN
-# Corporate Bankruptcy Prediction using Artificial Neural Networks (ANN)
+# 🏦 Corporate Bankruptcy Prediction using ANN
 
-An end-to-end Deep Learning classification project designed to predict corporate bankruptcy based on historical financial performance indicators. This repository features a complete data science pipeline implementing a sequential Artificial Neural Network (ANN) in Keras/TensorFlow, achieving a benchmark classification accuracy of **96%**.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-D00000?style=flat-square&logo=keras&logoColor=white)
+![Accuracy](https://img.shields.io/badge/Accuracy-96%25-brightgreen?style=flat-square)
 
-## 🚀 Project Overview
-Predicting corporate financial distress is a critical risk-management task that requires modeling complex, non-linear relationships across highly multi-dimensional data boundaries. This project establishes a streamlined deep learning workflow to ingest corporate metrics, handle feature variances via standard scaling, and optimize a dense neural network sequence designed to maximize model generalization and predictive reliability.
+> End-to-end deep learning pipeline to predict corporate bankruptcy from financial indicators using an Artificial Neural Network (ANN).
 
-## 📂 Repository Structure
-* **`python.ipynb`**: The master Jupyter Notebook containing exploratory data validation, structural feature preprocessing, neural network model compilation, and evaluation metrics.
-* **`data.csv`**: The operational dataset containing financial balance metrics, liquidity indicators, growth rates, and debt ratios.
+---
 
-## 📊 Pipeline & Preprocessing Workflow
-1. **Data Ingestion**: Parses extensive financial records from `data.csv`, focusing on key operational factors (such as Return on Assets, asset turnovers, quick ratios, and cash flow margins).
-2. **Feature Segregation**: Isolates the independent financial metric space from the categorical bankruptcy target flag (`Bankrupt?`).
-3. **Feature Scaling**: Applies standard scaling transformations to balance feature weightings, ensuring stable gradient descent updates during neural network training.
-4. **Data Partitioning**: Standardizes feature sets into separate training and validation partitions to monitor model convergence and guard against overfitting.
+## 📌 Problem Statement
+Predicting corporate financial distress early is critical for banks, investors, and regulators. This project builds a binary classification model that flags companies likely to go bankrupt based on historical financial metrics.
 
-## 🧠 Neural Network Architecture
-The baseline architecture features a dense, multi-layer sequential topology implemented in Keras/TensorFlow:
-* **Input & Hidden Layer 1**: Fully connected layer utilizing Rectified Linear Unit (`ReLU`) activations to map multi-dimensional financial weights.
-* **Hidden Layer 2**: Dense hidden dimension stacks to refine continuous patterns across deeply learned decision nodes.
-* **Output Node**: Configured with a single sigmoid prediction neuron to output discrete bankruptcy classification probabilities.
-* **Compilation**: Optimized using the **Adam** gradient descent variant and evaluated using classification error loss objectives.
+## 🎯 Results
+| Metric | Score |
+|--------|-------|
+| Accuracy | **96%** |
+| Model | Sequential ANN (Keras) |
+| Task | Binary Classification |
 
-## 📈 Model Performance & Validation
-The trained Artificial Neural Network classifier achieves a high performance benchmark:
-* **Overall Model Accuracy:** **96%**
-* **Statistical Performance Diagnostics**: Model metrics are verified using standard Scikit-Learn evaluation arrays. A complete **Classification Report** is compiled to trace precision distributions, recall thresholds, and F1-score balances, confirming robust performance across targeted class boundaries.
+## 🛠️ Tech Stack
+- **Language:** Python
+- **Deep Learning:** Keras, TensorFlow
+- **Data Processing:** Pandas, NumPy
+- **Visualization:** Matplotlib, Seaborn
+- **Environment:** Jupyter Notebook
 
-## 🛠️ Tech Stack & Dependencies
-* **Core Language:** Python
-* **Deep Learning Framework:** Keras / TensorFlow
-* **Machine Learning & Preprocessing:** Scikit-Learn
-* **Data Wrangling:** Pandas, NumPy
-* **Visualization:** Matplotlib, Seaborn
+## 📂 Project Structure
+```
+bankruptcy-prediction-ann/
+├── Bankrupt_Prediction_ANN/
+│   ├── data/          # Raw and processed datasets
+│   ├── python/        # Jupyter notebooks & scripts
+│   └── README.md
+└── README.md
+```
 
-## 🚀 Getting Started Locally
-
-### 1. Clone the Repository
+## 🚀 How to Run
 ```bash
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git)
-cd YOUR_REPOSITORY_NAME
+# 1. Clone the repo
+git clone https://github.com/shreesneha056-gif/bankruptcy-prediction-ann.git
+cd bankruptcy-prediction-ann
+
+# 2. Install dependencies
+pip install tensorflow keras pandas numpy matplotlib seaborn scikit-learn jupyter
+
+# 3. Launch Jupyter
+jupyter notebook
+```
+Then open the notebook inside the `python/` folder.
+
+## 📊 Pipeline Overview
+1. **Data Loading & EDA** — Explore financial indicators
+2. **Preprocessing** — Handle missing values, scale features
+3. **Model Building** — Sequential ANN with Dense + Dropout layers
+4. **Training & Evaluation** — Accuracy, confusion matrix, classification report
+5. **Results** — 96% classification accuracy
+
+---
+📫 [Connect on LinkedIn](https://www.linkedin.com/in/sneha-shree-mu/) | [Portfolio](https://shreesneha056-gif.github.io/portfolio_website/)
